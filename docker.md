@@ -26,7 +26,9 @@ docker.gpg] https://download.docker.com/linux/ubuntu \　　
 sudo tee /etc/apt/sources.list.d/docker.list > /dev/null　　
 
 $ echo 　"deb [arch="$(dpkg -- print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] 　https://download.docker.com/linux/ubuntu "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" /　sudo tee /etc/apt/sources.list.d/docker.list > /dev/null　　
+
 #在設定完Docker官方的儲存庫後,記得要再更新一次apt的索引　　
+
 #注意:這一步官網是放在「Install Docker Engine」步驟中,但以理解來說,放在這一步驟裡,應該會有較好的連結。　　
 $ sudo apt-get update　　
 
