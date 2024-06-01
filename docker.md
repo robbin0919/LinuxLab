@@ -12,12 +12,15 @@ $ sudo apt-get update　　
 $ sudo apt-get install ca-certificates curl gnupg　　
 
 #增加 Docker 的官方GPG key,這一步可以用來驗證Docker儲存庫下載的軟體包的完整性。　　
+
 $ sudo install -m 0755 -d /etc/apt/keyrings　　
 
 #如果在以下這個步驟有遇到curl:(60)SSL: no alternative certificate subject　name matches target host name 'download.docker.com'這個錯誤訊息,可以試著在cur1指令加上-k參數(curl -fsSL -k …… 略)　　
+
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg |sudo gpg　　-- dearmor -o /etc/apt/keyrings/docker.gpg　　
+
 $ sudo chmod a+r /etc/apt/keyrings/docker.gpg　　
-　　　
+
 #設定Docker官方的儲存庫　　　　
 
 $ echo \　　
