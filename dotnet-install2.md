@@ -1,10 +1,10 @@
-robbin0919@ubuntu00:~$ sudo apt-get install -y dotnet-sdk-6  
-[sudo] password for robbin0919:  
-Reading package lists... Done  
-Building dependency tree... Done  
+robbin0919@ubuntu00:~$ sudo apt-get install -y dotnet-sdk-6    
+[sudo] password for robbin0919:    
+Reading package lists... Done   
+Building dependency tree... Done   
 Reading state information... Done  
 E: Unable to locate package dotnet-sdk-6  
-robbin0919@ubuntu00:~$ dotnet --list-sdks
+robbin0919@ubuntu00:~$ dotnet --list-sdks  
 robbin0919@ubuntu00:~$ sudo add-apt-repository ppa:dotnet/backports  
 PPA publishes dbgsym, you may need to include 'main/debug' component  
 Repository: 'Types: deb  
